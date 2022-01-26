@@ -1,0 +1,308 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("./catdog.jpeg");
+  background-size: cover;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* -------------------------Login and Signup------------------------------------------------------------------------- */
+
+.signupModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+.signupTitle {
+  color: #2c1e13;
+  margin: -0.8rem 0 2rem 0;
+}
+
+.loginTitle {
+  color: #2c1e13;
+  display: block;
+  margin: 1rem 0 2rem 10rem;
+}
+
+.loginLabel {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.signupErrorMsg,
+.profileErrorMsg {
+  color: red;
+}
+
+.signupNameFieldDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.form-input {
+  font-family: "Roboto", sans-serif;
+  color: #2c1e13;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid gray;
+  transition: all 0.3s;
+}
+
+.name-input {
+  width: 40%;
+}
+
+.signupButtonDiv,
+.profileButtonDiv {
+  margin: 1rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.loginButtonDiv {
+  margin: 1.5rem 0 1rem 5.6rem;
+}
+
+.loginInputDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginQuestionBottom {
+  margin: 1.5rem 0 1rem 5.6rem;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+  color: #2c1e13;
+  background-color: rgb(255, 226, 206);
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* -------------------------Home Page------------------------------------------------------------------------- */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  height: 33rem;
+  width: 40rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(236, 231, 231);
+  margin: 7rem 21rem 0 27rem;
+  border-radius: 5%;
+}
+
+.homeTitle {
+  color: #2c1e13;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-size: 45px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.homeSubTitle {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.homeDescription {
+  font-size: 17px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* -------------------------Navbar------------------------------------------------------------------------- */
+
+.logo {
+  text-decoration: none;
+}
+
+.logo:hover,
+.logo:focus,
+.logo:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLinks {
+  border: 1px solid currentColor;
+  background-color: #ffe2ce;
+  border-radius: 30px;
+  color: purple;
+  font-size: 18px;
+  font-weight: 200;
+  overflow: hidden;
+  padding: 0.4rem 1.7rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.navLinks::after {
+  background-color: #2c1e13;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.navLinks:hover {
+  border: 1px solid transparent;
+  color: #ffe2ce;
+  transform: scale(1);
+  will-change: transform;
+}
+
+.navLinks:hover::after {
+  transform: translate(0, 0);
+}
+
+.ReactModal__Overlay--after-open {
+  z-index: 4;
+}
+
+.css-binzgt {
+  margin-top: 0;
+}
+
+/* -------------------------Search Page------------------------------------------------------------------------- */
+
+.searchPetForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+.searchTitle {
+  color: #2c1e13;
+  margin-top: 0.4rem;
+}
+
+.searchButton {
+  margin: 10px;
+  color: #2c1e13;
+}
+
+.petcard {
+  display: inline;
+  float: left;
+  padding: 2rem;
+  margin: 3rem;
+}
+
+.petpagecard {
+  display: inline;
+  float: left;
+  padding: 2rem;
+  margin: 3rem;
+}
+
+img {
+  border-radius: 8px;
+  width: 400px;
+  height: 300px;
+}
+
+.CreatePetFormAdmin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+}
+
+/* -------------------------Admin Page------------------------------------------------------------------------- */
+
+.adminForm {
+  margin-bottom: 1rem;
+}
+
+.adminCreatePetTitle {
+  margin-left: 7rem;
+}
+
+.muiAddPetAdmin {
+  margin-bottom: 0.6rem;
+}
+
+/* -------------------------Profile Page------------------------------------------------------------------------- */
+
+.profile-form-input {
+  font-family: "Roboto", sans-serif;
+  color: #2c1e13;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid gray;
+  transition: all 0.3s;
+}
+
+.profileFieldDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.profile-name-input {
+  margin-left: 1rem;
+}
